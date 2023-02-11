@@ -4,48 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="slider">
     <title>Slider</title>
 
-    <!-- Styles -->
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <!-- Styles css-->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="toggle-dark">
+<body class="toggle-light">
     <header>
-        <h1>Cat's domination</h1>
+        <h1>Cat's adoration</h1>
         <div class="dark-mode-buttons">
-            <div id="light-mode"><i class="fa-solid fa-sun" ></i></div>
-            <div id="dark-mode"><i class="fa-solid fa-moon" ></i></div>
+            <div id="light-mode" class="mode-active" title="to light mode">
+                <i class="fa-solid fa-sun" ></i>
+            </div>
+
+            <div id="dark-mode" title="to dark mode">
+                <i class="fa-solid fa-moon" ></i>
+            </div>
             
             
         </div>
     </header>
     
     <main>
-
+            <h2>How we think they are : </h2>
+        
         <section class="container">
             
             <article class="slide active">
-                <img src="img/catdomination.png"/>
+                <img class="img-slide" src="img/light-side/beautifulcat.png" alt="Cat, image generated with Midjourney"/>
             </article>
     
             <article class="slide before">
-                <img src="img/catoasting.png">
+                <img class="img-slide"  src="img/light-side/playingcat.png" alt="Cat, image generated with Midjourney">
     
             </article>
     
             <article class="slide ">
-                <img src="img/royalcat.png">
+                <img class="img-slide"  src="img/light-side/powercat.png" alt="Cat, image generated with Midjourney">
     
             </article>
     
             <article class="slide ">
-                <img src="img/sweetcat.png">
+                <img class="img-slide"  src="img/light-side/sleepingcat.png" alt="Cat, image generated with Midjourney">
     
             </article>
     
             <article class="slide after">
-                <img src="img/catstronaut.png">
+                <img class="img-slide"  src="img/light-side/suncat.png" alt="Cat, image generated with Midjourney">
     
             </article>
     
@@ -59,7 +73,14 @@
             </article>
     
         </section>
+        
     </main>
+
+    <footer>
+        <section>
+            <p>&copy;  2022 - <a target="_blank" href="https://github.com/CallyRoad">Cally</a></p>
+        </section>
+    </footer>
     
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/11984d1966.js" crossorigin="anonymous"></script>

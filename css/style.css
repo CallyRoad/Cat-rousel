@@ -18,8 +18,16 @@ body {
     width : 1000px;   
     text-align : center; 
     overflow : hidden;
+    font-family :'Open Sans', sans-serif;
+    
 }
 
+header {
+    text-align : center;
+    display : flex;
+    justify-content: space-around;
+    align-items : center;
+}
 
 
 
@@ -33,32 +41,49 @@ h1 {
     text-transform : uppercase;
     
 }
+a {
+    text-decoration : none;
+    color :#82589F;
+    font-weight: bold;
+
+    
+}
 /* Dark mode */
 
 .dark-mode-buttons {
     display : flex;
+    text-align : center;
     align-items : center;
     justify-content : space-around;
+    width : 100px;
+ 
     
 }
 
 .dark-mode-buttons .mode-active {
     padding : 7px;
-    color :rgb(249, 202, 36)
+    color : var(--turbo);
+}
+
+.toggle-dark, .toggle-light {
+    transition : all .3s ease-in-out;
+    cursor : pointer;
 }
 
 .toggle-dark {
     background-color : var(--deep-koamaru);
     color : var(--turbo);
+    
 }
 
 .toggle-light {
     background-color : var(--light-backgroud);
     color : var(--light-color);
+    
 }
 
 .mode-active {
-    background : red;
+    background : #82589F;
     width : 2rem;
     height : 2rem;
     border-radius : 50%;
@@ -74,6 +99,7 @@ h1 {
     margin : 0 auto;
     position : relative;
     
+
 
 
 }
@@ -164,7 +190,17 @@ h1 {
 
 
 
-@media screen and (max-width : 700px){
+@media screen and (max-width : 860px){
+
+   
+    h1 {
+        letter-spacing : .3em;
+        font-size : 1.5em;
+    }
+    header {
+        flex-direction : column;
+
+    }
     .container {
         width: 600px;
     }
