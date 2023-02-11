@@ -1,6 +1,6 @@
 :root {
-    --deep-koamaru : #30336b;
-    --turbo : #f9ca24;
+    --deep-koamaru : rgb(48, 51, 107);
+    --turbo : rgb(249, 202, 36);
 }
 
 * {
@@ -14,14 +14,14 @@ body {
     margin : 0 auto;
     background-color :var(--deep-koamaru);
     width : 1000px;
-    letter-spacing :  1em;
+    
     text-align : center; 
     overflow : hidden;
     color : var(--turbo);
 }
 h1 {
     margin-top: 1em;
-    
+    letter-spacing :  1em;
     font-size : 2em;
     text-transform : uppercase;
 
@@ -64,6 +64,9 @@ h1 {
     box-shadow : 0 0 105px -35px  rgba(0, 0, 0, .75);
 }
 
+.slide.active:hover {
+    transform : scale(1.1);
+}
 
 .slide.before, .slide.after {
     z-index : 2;
@@ -85,12 +88,10 @@ h1 {
 
 .container .buttons {
 
-    
-    color : var(--turbo);
     position : absolute;
     top : 50%;
     left : 50.50%;
-    width : 380px;
+    width : 1000px;
     transform : translate(-50%, -50%);
     opacity : .75;
     z-index: 100;
@@ -104,7 +105,7 @@ h1 {
 }
 
 .buttons .button {
-   color: var(--turbo);
+   color: var(--gold);
    font-size: 32px;
    cursor : pointer;
    position : relative;
@@ -120,23 +121,24 @@ h1 {
 
 .buttons .button:hover{
     opacity : 1;
+    transform : scale(1.1);
 }
 
 
-.buttons .button::before{
-    content : "";
-    position : absolute;
-    top : 50%;
-    left : 50%;
-    margin-left: -0.34rem;
-    transform : translate(-50%, -50%);
-    width : 50px;
-    height : 50px;
-    background-color: rgba(48, 51, 107, 1);
-    border-radius : 50%;
-    z-index: -50;
-    text-align :center ;
-    
+
+@media screen and (max-width : 700px){
+    .container {
+        width: 600px;
+    }
+
+    .container .slide {
+        width : 300px;
+        height : 300px;
+    }
+
+    .container .buttons {
+        width : 150px;
+        top : 520px;
+
+    }
 }
-
-
