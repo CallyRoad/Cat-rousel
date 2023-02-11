@@ -10,50 +10,62 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="toggle-dark">
+    <header>
+        <h1>Cat's domination</h1>
+        <div class="dark-mode-buttons">
+            <div id="light-mode"><i class="fa-solid fa-sun" ></i></div>
+            <div id="dark-mode"><i class="fa-solid fa-moon" ></i></div>
+            
+            
+        </div>
+    </header>
+    
+    <main>
 
-    <h1>Cat's domination</h1>
-    <section class="container">
-        
-        <article class="slide active">
-            <img src="img/catdomination.png"/>
-        </article>
-
-        <article class="slide before">
-            <img src="img/catoasting.png">
-
-        </article>
-
-        <article class="slide ">
-            <img src="img/royalcat.png">
-
-        </article>
-
-        <article class="slide ">
-            <img src="img/sweetcat.png">
-
-        </article>
-
-        <article class="slide after">
-            <img src="img/catstronaut.png">
-
-        </article>
-
-        <article class="buttons">
-            <div class="button" title="Previous slide" >
-                <i class="fa-solid fa-arrow-left" id="previous"></i>
-            </div>
-            <div class="button" title="Next slide" >
-                <i class="fa-solid fa-arrow-right" id="next"></i>
-            </div>
-        </article>
-
-    </section>
+        <section class="container">
+            
+            <article class="slide active">
+                <img src="img/catdomination.png"/>
+            </article>
+    
+            <article class="slide before">
+                <img src="img/catoasting.png">
+    
+            </article>
+    
+            <article class="slide ">
+                <img src="img/royalcat.png">
+    
+            </article>
+    
+            <article class="slide ">
+                <img src="img/sweetcat.png">
+    
+            </article>
+    
+            <article class="slide after">
+                <img src="img/catstronaut.png">
+    
+            </article>
+    
+            <article class="buttons">
+                <div class="button" title="Previous slide" >
+                    <i class="fa-solid fa-arrow-left" id="previous"></i>
+                </div>
+                <div class="button" title="Next slide" >
+                    <i class="fa-solid fa-arrow-right" id="next"></i>
+                </div>
+            </article>
+    
+        </section>
+    </main>
     
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/11984d1966.js" crossorigin="anonymous"></script>
     <!-- Script -->
     <script src="script/slides.js"></script>
+    <script src="script/dark-mode.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,9 @@
 :root {
     --deep-koamaru : rgb(48, 51, 107);
     --turbo : rgb(249, 202, 36);
+
+    --light-backgroud : rgb(248, 239, 186) ;
+    --light-color : rgb(59, 59, 152);
 }
 
 * {
@@ -8,22 +11,57 @@
 }
 
 
-/* Ge */
+/* Generalities */
 body {
     padding : 0;
     margin : 0 auto;
-    background-color :var(--deep-koamaru);
-    width : 1000px;
-    
+    width : 1000px;   
     text-align : center; 
     overflow : hidden;
-    color : var(--turbo);
 }
+
+
+
+
+
 h1 {
+    
+    
     margin-top: 1em;
     letter-spacing :  1em;
     font-size : 2em;
     text-transform : uppercase;
+    
+}
+/* Dark mode */
+
+.dark-mode-buttons {
+    display : flex;
+    align-items : center;
+    justify-content : space-around;
+    
+}
+
+.dark-mode-buttons .mode-active {
+    padding : 7px;
+    color :rgb(249, 202, 36)
+}
+
+.toggle-dark {
+    background-color : var(--deep-koamaru);
+    color : var(--turbo);
+}
+
+.toggle-light {
+    background-color : var(--light-backgroud);
+    color : var(--light-color);
+}
+
+.mode-active {
+    background : red;
+    width : 2rem;
+    height : 2rem;
+    border-radius : 50%;
 
 }
 
